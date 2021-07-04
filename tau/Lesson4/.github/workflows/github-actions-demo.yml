@@ -1,0 +1,15 @@
+# This is a basic workflow to help you get started with Actions
+# Beth Test
+
+name: "Newman Tests"
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: postman/newman
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run API Tests
+        run: newman run MoTAutomationWeekAPIChallenge.postman_collection.json --env-var  "password=$PASSWORD"
