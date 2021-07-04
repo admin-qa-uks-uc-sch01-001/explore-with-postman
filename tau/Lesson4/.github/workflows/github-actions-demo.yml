@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Run API Tests
-        run: newman run MoTAutomationWeekAPIChallenge.postman_collection.json --env-var  "password=$PASSWORD"
+        run: newman run MoTAutomationWeekAPIChallenge.postman_collection.json --env-var 
