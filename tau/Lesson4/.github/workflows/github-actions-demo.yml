@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Run API Tests
-        run: newman run MoTAutomationWeekAPIChallenge.postman_collection.json --env-var 
+        run: newman run "Restful Booker BVT.postman_collection.json" -e Production.postman_environment.json 
