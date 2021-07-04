@@ -10,6 +10,6 @@ jobs:
     container: 
       image: postman/newman
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Run API Tests
-        run: newman run "Restful Booker BVT.postman_collection.json" -e Production.postman_environment.json 
+        run: newman run "tau/Lesson4/RestfulBookerBVT.postman_collection.json" -e "tau/Lesson4/Production.postman_environment.json" 
